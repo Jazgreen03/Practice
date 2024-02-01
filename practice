@@ -1,0 +1,55 @@
+package MowerInventory;
+
+public class CommercialMower extends LawnTractor {
+	String manufacturer;
+	int year ;
+	String serialNum;
+	String model;
+	double deckwidth;
+	double operationHours;
+	boolean zeroTurnRadius;
+	
+	
+	public CommercialMower() {
+		operationHours = 0;
+        zeroTurnRadius = false;
+	}
+	
+
+	public CommercialMower(String manufacturer, int year, String serialNum, String model, double deckWidth,
+			double operatingHours) {
+	
+	
+	}
+
+
+	public double getoperationHours() {
+        return operationHours;
+    }
+
+    public boolean getzeroTurnRadius() {
+        return zeroTurnRadius;
+    }
+    
+    public void setoperationHours(double operationHours) {
+        this.operationHours = operationHours;
+    }
+
+    public void setzeroTurnRadius(boolean zeroTurnRadius) {
+        this.zeroTurnRadius= zeroTurnRadius;
+    }
+    public String toString () {
+		   return (operationHours + "\n" + zeroTurnRadius);
+	 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
